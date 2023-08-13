@@ -1,0 +1,45 @@
+*{
+    font-family: Arial;
+ }
+ .cliente-nome{
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    width: 50px;
+    height: 8%;
+    background-color: rgb(170, 0, 0);
+    border-bottom-left-radius: 10%;
+    transition: width 0.5s;
+    transition-timing-function: linear;
+  }
+.cliente-nome:hover {
+    width: 150px;
+  }
+.text-cliente{
+    display: inline-block;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 2s, 0.5s;
+}
+.cliente-nome:hover .text-cliente{
+    opacity: 1;
+  }
+.mostrar-alerta{
+    animation: show_slide 1s ease forwards;
+}
+@keyframes show_slide {
+    0%{
+        transform : translateX(100%);
+    }
+    40%{
+        transform : translateX(-10%);
+    }
+    80%{
+        transform : translateX(0%);
+    }
+    100%{
+        transform : translateX(-10px);
+    }
+}
+
+
