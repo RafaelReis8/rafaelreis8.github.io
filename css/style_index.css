@@ -1,72 +1,29 @@
 *{
     font-family: Arial;
  }
-.search-bar{
-  background: rgba(255,255,255,0.4);
-  display: flex;
-  align-items: center;
-  border-radius: 60px;
-  padding: 10px 20px;
+ body {
+    background-color: #f5f5f5;
+}
+.conteudo {
+    background-image: url('../images/sobre.jpg');
+    background-size: cover;
+    background-position: center top;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.overlay {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
 
-}
-.search-bar input{
-  background-color: transparent;
-  flex: 1;
-  border: 0;
-  outline: none;
-  padding: 5px 5px;
-  font-size: 20px;
-  color: #7b819e;
-}
-::placeholder{
-  color: transparent;
-}
-.search-bar button i{
-  width: 25px;
-}
-.search-bar button{
-  border: 0;
-  border-radius: 50%;
-  width: 60px;
-  height: 30px;
-  background: #7b819e;
-}
- .container-img{
-  background-size: cover;
-  min-height: 30vh;
- }
 
- 
- .informacao{
-    color: white;
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5));
- }
- .informacao2{
-    color: white;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0));
- }
- 
- .casas img {
-   transition: 0.5s;
-   height: 350px;
-   object-fit: cover;
-   object-position: center center;
- }
- .casas img:hover {
-   transform: scale(0.95);
- }   
- 
- @media (min-width:675px) {
-  .search-bar button{
-    height: 60px;
-
-  }
- }
- @media (min-width:500px) {
-  .container-img{
-    min-height: 70vh;
-  }
-  ::placeholder{
-    color: #7b819e;
-  }
- }
+@media (min-width: 580px) {
+    .overlay {
+        width: 50%;
+    }
+}
