@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Projetos</title>
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/bootstrap-icons.css">
    <link rel="stylesheet" href="css/style_index.css">
@@ -13,17 +13,19 @@
 
 <body>
    <header>
-      <nav class="navbar navbar-expand-md bg-light fixed-top">
+      <nav class="navbar navbar-expand-md bg-light fixed-top custom-navbar">
          <button class="navbar-toggler p-2" data-bs-toggle="collapse" data-bs-target="#menu-principal">
             <span class="navbar-toggler-icon"></span>
          </button>
          <div class="collapse navbar-collapse" id="menu-principal">
             <div class="navbar-nav p-2">
-               <a href="index.html" class="nav-link" style="margin-left: 5px;">Página Inicial</a>
+               <a href="index.html" class="nav-link" style="margin-left: 5px;">Inicio</a>
                <a href="sobre.html" class="nav-link" style="margin-left: 5px;">Sobre</a>
                <a href="projetos.html" class="nav-link" style="margin-left: 5px;">Projetos</a>
             </div>
-            <div class="navbar-brand mx-auto p-1 d-none d-md-block">Rafael Pereira Reis</div>
+            <div class="navbar-brand mx-auto p-1 d-none d-md-block"
+               style="color: #000; font-family: 'Montserrat', sans-serif; font-size: 20px; text-transform: uppercase; letter-spacing: 2px;">
+               Rafael Pereira Reis</div>
             <div class="navbar-nav ml-auto p-1">
                <a href="https://www.facebook.com/profile.php?id=100007486456866" target="_blank" class="nav-link"
                   style="margin-right: 30px;">
@@ -39,22 +41,90 @@
                </a>
             </div>
          </div>
-         <div class="navbar-nav mx-auto p-1 d-md-none">Rafael Pereira Reis</div>
+         <div class="navbar-nav mx-auto p-1 d-md-none"
+            style="color: #000; font-family: 'Montserrat', sans-serif; font-size: 20px; text-transform: uppercase; letter-spacing: 2px;">
+            Rafael Pereira Reis</div>
       </nav>
    </header>
    <main>
+      <div class="imagem_proj pt-5 mt-5">
+         <div class="container mt-5">
+            <div class="titulo d-flex align-items-center justify-content-center">
+               <h1><strong>Os Meus Projetos</strong></h1>
+            </div>
+         </div>
+      </div>
+      <div class="pt-5" style="background-color: white;">
+         <div class="container">
+            <div class="row pt-5">
+               <div class="col-md-4 p-4">
+                  <h2 class="titulos">Projetos desenvolvidos:</h2>
+               </div>
+               <a href="#" class="col-md-4 p-4 quadrado">
+                  <h2 class="titulos">WebSite</h2>
+                  <p class="p-2 textos" style="font-size: 18px;">O website foi um trabalho desenvolvido para a cadeira de
+                     Projeto e
+                     Desenvolvimento Informático, isto é o projeto final do curso de informática de gestão.
+                     O projeto foi desenvolver um website para um canil com as funcionalidades de administrador e
+                     cliente.</p>
+               </a>
+               <a href="#" class="col-md-4 p-4 quadrado">
+                  <h2 class="titulos">App</h2>
+                  <p class="p-2 textos" style="font-size: 18px;">A aplicação foi desenvolvida na EzConnecter. A aplicação era
+                     um E-commerce e servia para as diversas empresas que trabalhavam com a EzConnecter,
+                     a unica coisa que alterava na aplicação de empresa para empresa era os produtos e os dados de
+                     registo. Para fazer a distinção de cada empresa era utilizado um token
+                     correspondente a cada uma delas.</p>
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="container mt-5">
+         <h1 class="text-center p-5 titulos">Certificados</h1>
+         <div class="row">
+            <div class="col-md-4 p-4">
+               <img src="./images/c6.jpg" alt="Certificado 6" class="img-fluid" style="cursor: pointer; height: 30vh;"
+                  onclick="openModal('./images/c6.jpg')">
+            </div>
+            <div class="col-md-4 p-4">
+               <img src="./images/c2.jpg" alt="Certificado 2" class="img-fluid" style="cursor: pointer; height: 30vh;"
+                  onclick="openModal('./images/c2.jpg')">
+            </div>
+            <div class="col-md-4 p-4">
+               <img src="./images/c3.jpg" alt="Certificado 3" class="img-fluid" style="cursor: pointer; height: 30vh;"
+                  onclick="openModal('./images/c3.jpg')">
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-4 p-4">
+               <img src="./images/c4.jpg" alt="Certificado 4" class="img-fluid" style="cursor: pointer; height: 30vh;"
+                  onclick="openModal('./images/c4.jpg')">
+            </div>
+            <div class="col-md-4 p-4">
+               <img src="./images/c5.jpg" alt="Certificado 5" class="img-fluid" style="cursor: pointer; height: 30vh;"
+                  onclick="openModal('./images/c5.jpg')">
+            </div>
+            <div class="col-md-4 p-4 d-flex align-items-center justify-content-center">
+               <img src="./images/c1.jpg" alt="Certificado 1" class="img-fluid" style="cursor: pointer; height: 30vh;"
+                  onclick="openModal('./images/c1.jpg')">
+            </div>
+         </div>
+      </div>
+      <div class="overlayimg" id="imageModalOverlay" onclick="closeModal()">
+         <img src="" alt="Imagem Ampliada" class="modal-image" id="modalImage">
+      </div>
       <footer class="container-fluid">
          <hr>
          <div class="row p-5">
             <div class="col-md-6 text-center p-4">
-               <h2 class="p-2">Formação Acadêmica</h2>
-               <p>Licenciatura em Informática de Gestão</p>
-               <p>Coimbra Business School - ISCAC | 2023</p>
+               <h2 class="p-2 titulos">Formação Acadêmica</h2>
+               <p class="textos">Licenciatura em Informática de Gestão</p>
+               <p class="textos">Coimbra Business School - ISCAC | 2023</p>
             </div>
             <div class="col-md-6 text-center p-4">
-               <h2 class="p-2">Contacto</h2>
-               <p>Email: reis.rafael.2002@gmail.com</p>
-               <p>Telémovel: 918734806</p>
+               <h2 class="p-2 titulos">Contacto</h2>
+               <p class="textos">Email: reis.rafael.2002@gmail.com</p>
+               <p class="textos">Telémovel: 918734806</p>
             </div>
          </div>
       </footer>
@@ -62,6 +132,15 @@
    <script src="js/bootstrap.bundle.min.js"></script>
    <script src="js/jquery.min.js"></script>
    <script src="js/website.js"></script>
+   <script>
+      function openModal(imageSrc) {
+         document.getElementById("modalImage").src = imageSrc;
+         document.getElementById("imageModalOverlay").style.display = "flex";
+      }
+      function closeModal() {
+         document.getElementById("imageModalOverlay").style.display = "none";
+      }
+   </script>
 </body>
 
 </html>

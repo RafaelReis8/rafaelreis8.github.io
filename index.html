@@ -14,17 +14,19 @@
 
 <body>
    <header>
-      <nav class="navbar navbar-expand-md bg-light fixed-top">
+      <nav class="navbar navbar-expand-md bg-light fixed-top custom-navbar">
          <button class="navbar-toggler p-2" data-bs-toggle="collapse" data-bs-target="#menu-principal">
             <span class="navbar-toggler-icon"></span>
          </button>
          <div class="collapse navbar-collapse" id="menu-principal">
             <div class="navbar-nav p-2">
-               <a href="index.html" class="nav-link" style="margin-left: 5px;">Página Inicial</a>
+               <a href="index.html" class="nav-link" style="margin-left: 5px;">Inicio</a>
                <a href="sobre.html" class="nav-link" style="margin-left: 5px;">Sobre</a>
                <a href="projetos.html" class="nav-link" style="margin-left: 5px;">Projetos</a>
             </div>
-            <div class="navbar-brand mx-auto p-1 d-none d-md-block">Rafael Pereira Reis</div>
+            <div class="navbar-brand mx-auto p-1 d-none d-md-block"
+               style="color: #000; font-family: 'Montserrat', sans-serif; font-size: 20px; text-transform: uppercase; letter-spacing: 2px;">
+               Rafael Pereira Reis</div>
             <div class="navbar-nav ml-auto p-1">
                <a href="https://www.facebook.com/profile.php?id=100007486456866" target="_blank" class="nav-link"
                   style="margin-right: 30px;">
@@ -40,7 +42,9 @@
                </a>
             </div>
          </div>
-         <div class="navbar-nav mx-auto p-1 d-md-none">Rafael Pereira Reis</div>
+         <div class="navbar-nav mx-auto p-1 d-md-none"
+            style="color: #000; font-family: 'Montserrat', sans-serif; font-size: 20px; text-transform: uppercase; letter-spacing: 2px;">
+            Rafael Pereira Reis</div>
       </nav>
    </header>
    <main>
@@ -55,24 +59,27 @@
          </div>
       </div>
       <div class="mt-2">
-         <h2 class="text-center pt-5 pb-5 display-4 font-weight-bold">Experiências Profissionais</h2>
+         <h2 class="text-center pt-5 pb-5 display-4 font-weight-bold titulos">Experiências Profissionais</h2>
       </div>
       <div class="container mt-3 pb-5">
          <div class="row">
             <div class="col-md-4">
-               <h4>Empregado Balcão | R.Vitória | 2019</h4>
-               <p>O Restaurante Vitória está localizado em Fátima, trabalhei lá 3 meses como responsável pelo bar do
+               <h4 class="titulos">Empregado Balcão | R.Vitória | 2019</h4>
+               <p class="textos">O Restaurante Vitória está localizado em Fátima, trabalhei lá 3 meses como responsável
+                  pelo bar do
                   restaurante.</p>
             </div>
             <div class="col-md-4">
-               <h4>Empregado Fabril | Ourividro | 2021</h4>
-               <p>A Ourividro era uma empresa de vidros, trabalhei lá 3 meses e a minha função era tirar o excesso de
+               <h4 class="titulos">Empregado Fabril | Ourividro | 2021</h4>
+               <p class="textos">A Ourividro era uma empresa de vidros, trabalhei lá 3 meses e a minha função era tirar
+                  o excesso de
                   tinta dos vidros
                   para depois serem embalados para os clientes.</p>
             </div>
             <div class="col-md-4">
-               <h4>Programador | EzConnector | 2022</h4>
-               <p>Trabalhei 3 meses para a EzConnector, a minha função era criar uma aplicação para o telemovel e sempre
+               <h4 class="titulos">Programador | EzConnector | 2022</h4>
+               <p class="textos">Trabalhei 3 meses para a EzConnector, a minha função era criar uma aplicação para o
+                  telemóvel e sempre
                   que necessário prestar apoio ao cliente.</p>
             </div>
          </div>
@@ -80,9 +87,9 @@
       <div class="position-relative pt-5">
          <div class="conteudo container-fluid"></div>
          <div class="overlay position-absolute top-100 start-50 translate-middle">
-            <h2 class="p-3" style="letter-spacing: 2px;">Mais sobre mim</h2>
+            <h2 class="p-3 titulos" style="letter-spacing: 2px;">Mais sobre mim</h2>
             <div class="p-3" style="font-size: 20px;">
-               <p>Desde pequeno que gostei de tudo o que estivesse relacionado com a tecnologia e gestão.
+               <p class="textos">Desde pequeno que gostei de tudo o que estivesse relacionado com a tecnologia e gestão.
                   Atualmente Tenho mais experiências profissionais com a tecnologia e procuro desenvolver tudo o que
                   está ligado a segurança informática</p>
             </div>
@@ -92,18 +99,57 @@
          </div>
       </div>
       <div style="height: 30vh;"></div>
+      <div class="container">
+         <h1 class="text-center p-5 titulos">Os Meus Projetos</h1>
+         <div class="row">
+            <div class="col-md-6 text-center">
+               <table class="table">
+                  <tbody>
+                     <tr>
+                        <td class="align-middle textos"><strong>WebSite</strong></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a href="#">
+                              <img src="./images/website.jpg" alt="Projeto 1" class="img-fluid img-zoom p-3"
+                                 style="height: 60vh;">
+                           </a>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div class="col-md-6 text-center">
+               <table class="table">
+                  <tbody>
+                     <tr>
+                        <td class="align-middle textos"><strong>App</strong></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a href="#">
+                              <img src="./images/app.jpg" alt="Projeto 2" class="img-fluid img-zoom p-3"
+                                 style="height: 60vh;">
+                           </a>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
       <footer class="container-fluid">
          <hr>
          <div class="row p-5">
             <div class="col-md-6 text-center p-4">
-               <h2 class="p-2">Formação Acadêmica</h2>
-               <p>Licenciatura em Informática de Gestão</p>
-               <p>Coimbra Business School - ISCAC | 2023</p>
+               <h2 class="p-2 titulos">Formação Acadêmica</h2>
+               <p class="textos">Licenciatura em Informática de Gestão</p>
+               <p class="textos">Coimbra Business School - ISCAC | 2023</p>
             </div>
             <div class="col-md-6 text-center p-4">
-               <h2 class="p-2">Contacto</h2>
-               <p>Email: reis.rafael.2002@gmail.com</p>
-               <p>Telémovel: 918734806</p>
+               <h2 class="p-2 titulos">Contacto</h2>
+               <p class="textos">Email: reis.rafael.2002@gmail.com</p>
+               <p class="textos">Telémovel: 918734806</p>
             </div>
          </div>
       </footer>
