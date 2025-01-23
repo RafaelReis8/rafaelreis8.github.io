@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>RAFAEL REIS</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Rafael Reis home" name="keywords">
+    <meta content="Rafael Reis home" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .btn-outline-light.selected {
+            color: #212529;
+            background-color: #ffffff;
+            border-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Rafael</span>Reis</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" id="navHome" class="nav-item nav-link active">Home</a>
+                <a href="#about" id="navAbout" class="nav-item nav-link">About</a>
+                <a href="#qualification" id="navQuality" class="nav-item nav-link">Quality</a>
+                <a href="#skill" id="navSkill" class="nav-item nav-link">Skill</a>
+                <!-- <a href="#service" id="navService" class="nav-item nav-link">Service</a> -->
+                <!-- <a href="#portfolio" id="navPortfolio" class="nav-item nav-link">Portfolio</a> -->
+                <!-- <a href="#testimonial" id="navReview" class="nav-item nav-link">Review</a>
+                <a href="#blog" id="navBlog" class="nav-item nav-link">Blog</a>
+                <a href="#contact" id="navContact" class="nav-item nav-link">Contact</a> -->
+            </div>
+            <a href="mailto:reis.rafael.2002@gmail.com" id="navHireMe" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3" id="intro-text">I'm</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff; font-family: sans-serif;" id="name">Rafael Reis</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white" id="role"></h1>
+                    <div class="typed-text d-none" id="roles">
+                        Full Stack Developer, Front End Developer, Back End Developer, Apps Developer
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="Rafael_Reis_EN_CV.pdf" class="btn btn-outline-light mr-5" id="download-cv" target="_blank">Download CV</a>
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-start">
+                            <button class="btn btn-outline-light selected mr-3" id="btn-en">English</button>
+                            <button class="btn btn-outline-light" id="btn-pt">Português</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-family: sans-serif;" id="only-about">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary" id="about-header">About Me</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4" id="about-subheader">Full Stack Developer</h3>
+                    <p id="about-description">I hold a degree in Management Informatics, with experience in programming and an interest in cybersecurity. Since a young age, I have been passionate about technology and management, areas in which I continuously strive to expand my knowledge. I value teamwork and seek an environment where I can apply my skills, learn, and grow professionally.</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6 id="inf-name">Name: <span class="text-secondary">Rafael Pereira Reis</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6 id="inf-birthday">Birthday: <span id="about-birthday" class="text-secondary">July 5, 2002</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6 id="inf-degree">Degree: <span id="about-degree" class="text-secondary">Bachelor's Degree</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6 id="inf-experience">Experience: <span id="experience" class="text-secondary"></span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">reis.rafael.2002@gmail.com</span></h6></div>
+                    </div>
+                    <a href="mailto:reis.rafael.2002@gmail.com" class="btn btn-outline-primary mr-4" id="hire-me">Hire Me</a>
+                    <a href="#qualification" class="btn btn-outline-primary" id="learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- About End -->
+
+
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-family: sans-serif;" id="quality">Quality</h1>
+                <h1 class="position-absolute text-uppercase text-primary" id="education-expericence">Education & Expericence</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 id="educationHeader" class="mb-4">My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                      <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 id="education1Title" class="font-weight-bold mb-1">Socio-Economic Sciences</h5>
+                        <p class="mb-2">
+                          <strong>Centro de Estudos de Fátima</strong> | <small>2017 - 2020</small>
+                        </p>
+                        <p id="education1Description">
+                            During this period, I developed a strong foundation in social and economic sciences, exploring topics such as economics, sociology, and management, with an emphasis on the practical application of economic concepts.                        
+                        </p>
+                      </div>
+                      <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 id="education2Title" class="font-weight-bold mb-1">Management IT</h5>
+                        <p class="mb-2">
+                          <strong>Coimbra Business School - ISCAC</strong> | <small>2020 - 2023</small>
+                        </p>
+                        <p id="education2Description">
+                            I acquired knowledge in management and information technology, focusing on areas such as systems analysis, strategic management, and business applications. During the course, I also developed programming skills, using languages like PHP and SQL to create practical and innovative solutions for business problems.
+                        </p>
+                      </div>
+                      <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 id="education3Title" class="font-weight-bold mb-1">Postgraduate Cybersecurity</h5>
+                        <p class="mb-2">
+                          <strong>Coimbra Business School - ISCAC</strong> | <small>2023 - 2024</small>
+                        </p>
+                        <p id="education3Description">
+                            Specialization in cybersecurity, addressing topics such as risk management, network security, and data protection, with an emphasis on practical solutions for digital challenges.
+                        </p>
+                      </div>
+                    </div>
+                  </div>                  
+                <div class="col-lg-6">
+                    <h3 id="experienceHeader" class="mb-4">My Experience</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 id="experience1Title" class="font-weight-bold mb-1">Bar Manager</h5>
+                            <p id="experience1Company" class="mb-2"><strong>Restaurante Vitória</strong> | <small>2019</small></p>
+                            <p id="experience1Description">
+                                Managed the bar operations for 3 months, ensuring excellent customer service and efficient order management at a restaurant in Fátima.
+                            </p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 id="experience2Title" class="font-weight-bold mb-1">Factory Operator</h5>
+                            <p id="experience2Company" class="mb-2"><strong>Ourividro</strong> | <small>2021</small></p>
+                            <p id="experience2Description">
+                                Worked for 3 months performing finishing tasks on glass products, removing excess paint to ensure quality before shipping to customers.
+                            </p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 id="experience3Title" class="font-weight-bold mb-1">Mobile App Developer</h5>
+                            <p id="experience3Company" class="mb-2"><strong>EzConnector</strong> | <small>2022</small></p>
+                            <p id="experience3Description">
+                                Developed a mobile application over 3 months to optimize internal processes and provided customer support when needed.
+                            </p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 id="experience4Title" class="font-weight-bold mb-1">Web Developer</h5>
+                            <p id="experience4Company" class="mb-2"><strong>Trigenius</strong> | <small>2023 - Present</small></p>
+                            <p id="experience4Description">
+                                Currently working on web development projects using PyroCMS and Prestashop, including creating e-commerce sites and developing custom modules for Prestashop. Occasionally programming in C# for internal Trigenius products.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
+
+
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 id="skillsHeaderMain" class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-family: sans-serif;">Skills</h1>
+                <h1 id="skillsHeaderSecondary" class="position-absolute text-uppercase text-primary">My Skills</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">HTML</h6>
+                            <h6 class="font-weight-bold">90%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">CSS</h6>
+                            <h6 class="font-weight-bold">85%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">PHP</h6>
+                            <h6 class="font-weight-bold">90%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Javascript</h6>
+                            <h6 class="font-weight-bold">75%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Laravel</h6>
+                            <h6 class="font-weight-bold">75%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Prestashop</h6>
+                            <h6 class="font-weight-bold">85%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skill End -->
+
+
+    <!-- Services Start
+    <div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Services</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Web Design</h4>
+                    </div>
+                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Web Development</h4>
+                    </div>
+                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Apps Design</h4>
+                    </div>
+                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-apple service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Apps Development</h4>
+                    </div>
+                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">SEO</h4>
+                    </div>
+                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Content Creating</h4>
+                    </div>
+                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    Services End -->
+
+
+    <!-- Portfolio Start
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Design</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Development</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Marketing</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2" style="cursor: pointer;">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center" style="opacity: 0;">
+                            <a href="img/portfolio-1.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2" style="cursor: pointer;">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center" style="opacity: 0;">
+                            <a href="img/portfolio-2.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2" style="cursor: pointer;">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center" style="opacity: 0;">
+                            <a href="img/portfolio-3.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2" style="cursor: pointer;">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center" style="opacity: 0;">
+                            <a href="img/portfolio-4.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2" style="cursor: pointer;">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center" style="opacity: 0;">
+                            <a href="img/portfolio-5.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2" style="cursor: pointer;">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center" style="opacity: 0;">
+                            <a style="color: transparent;" href="img/portfolio-6.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    Portfolio End -->
+
+
+    <!-- Testimonial Start
+    <div class="container-fluid py-5" id="testimonial">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Review</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Clients Say</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
+                            <h5 class="font-weight-bold m-0">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                            <h5 class="font-weight-bold m-0">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                            <h5 class="font-weight-bold m-0">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <Testimonial End 
+
+
+    Blog Start
+    <div class="container-fluid pt-5" id="blog">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Blog</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Latest Blog</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Jan</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Jan</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Jan</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    Blog End -->
+
+
+    <!-- Contact Start
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                        required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                        required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
+                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                    required="required"
+                                    data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
+                                    Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <!-- <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a> -->
+                <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/profile.php?id=100007486456866"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/rafael-reis-960ba5271/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" href="https://www.instagram.com/rafaelpreis_/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <!-- <div class="d-flex justify-content-center mb-3">
+                <a class="text-white" href="#">Privacy</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Terms</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">FAQs</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Help</a>
+            </div> -->
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Domain Name</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        const btnEnglish = document.getElementById('btn-en');
+        const btnPortuguese = document.getElementById('btn-pt');
+        const downloadCv = document.getElementById('download-cv');
+
+        const navHome = document.getElementById('navHome');
+        const navAbout = document.getElementById('navAbout');
+        const navQuality = document.getElementById('navQuality');
+        const navSkill = document.getElementById('navSkill');
+        const navService = document.getElementById('navService');
+        const navPortfolio = document.getElementById('navPortfolio');
+        const navReview = document.getElementById('navReview');
+        const navBlog = document.getElementById('navBlog');
+        const navContact = document.getElementById('navContact');
+        const navHireMe = document.getElementById('navHireMe');
+
+        const introText = document.getElementById('intro-text');
+        const aboutOnly = document.getElementById('only-about');
+        const aboutHeader = document.getElementById('about-header');
+        const aboutSubheader = document.getElementById('about-subheader');
+        const aboutDescription = document.getElementById('about-description');
+        const infName = document.getElementById('inf-name');
+        const infBirthday = document.getElementById('inf-birthday');
+        const infDegree = document.getElementById('inf-degree');
+        const birthdayField = document.getElementById('about-birthday');
+        const degreeField = document.getElementById('about-degree');
+        const infExperience = document.getElementById('inf-experience');
+        const hireMeBtn = document.getElementById('hire-me');
+        const learnMoreBtn = document.getElementById('learn-more');
+        const educationHeader = document.getElementById('educationHeader');
+        const education1Title = document.getElementById('education1Title');
+        const education1Description = document.getElementById('education1Description');
+        const education2Title = document.getElementById('education2Title');
+        const education2Description = document.getElementById('education2Description');
+        const education3Title = document.getElementById('education3Title');
+        const education3Description = document.getElementById('education3Description');
+        const quality = document.getElementById('quality');
+        const educationExpericence = document.getElementById('education-expericence');
+        const experienceHeader = document.getElementById('experienceHeader');
+        const experience1Title = document.getElementById('experience1Title');
+        const experience1Company = document.getElementById('experience1Company');
+        const experience1Description = document.getElementById('experience1Description');
+        const experience2Title = document.getElementById('experience2Title');
+        const experience2Company = document.getElementById('experience2Company');
+        const experience2Description = document.getElementById('experience2Description');
+        const experience3Title = document.getElementById('experience3Title');
+        const experience3Company = document.getElementById('experience3Company');
+        const experience3Description = document.getElementById('experience3Description');
+        const experience4Title = document.getElementById('experience4Title');
+        const experience4Company = document.getElementById('experience4Company');
+        const experience4Description = document.getElementById('experience4Description');
+        const skillsHeaderMain = document.getElementById('skillsHeaderMain');
+        const skillsHeaderSecondary = document.getElementById('skillsHeaderSecondary');
+
+        
+        const translations = {
+            pt: {
+                btnEnglish: "Inglês",
+                btnPortuguese: "Português",
+                downloadCv:"Descarregar CV",
+                navHome: "Início",
+                navAbout: "Sobre",
+                navQuality: "Qualidade",
+                navSkill: "Competências",
+                navService: "Serviço",
+                navPortfolio: "Portfólio",
+                navReview: "Avaliações",
+                navBlog: "Blog",
+                navContact: "Contato",
+                navHireMe: "Contrate-me",
+                introText: "Eu sou o",
+                aboutOnly: "Sobre",
+                aboutHeader: "Sobre Mim",
+                aboutSubheader: "Desenvolvedor Full Stack",
+                aboutDescription:
+                    "Sou licenciado em Informática de Gestão, com experiência em programação e interesse em segurança informática. Desde jovem, sou apaixonado por tecnologia e gestão, áreas em que busco continuamente expandir os meus conhecimentos. Valorizo o trabalho em equipa e procuro um ambiente que me permita aplicar as minhas competências, aprender e crescer profissionalmente.",
+                infName: "Nome: ",
+                infBirthday: "Data de Nascimento: ",
+                infDegree: "Grau Acadêmico: ",
+                birthday: "5 de Julho de 2002",
+                degree: "Licenciatura",
+                infExperience: "Experiência",
+                hireMe: "Contrate-me",
+                learnMore: "Saiba Mais",
+                educationHeader: "A Minha Educação",
+                education1Title: "Ciências Socioeconómicas",
+                education1Description:
+                "Durante este período, desenvolvi uma base sólida em ciências sociais e económicas, explorando temas como economia, sociologia e gestão, com ênfase na aplicação prática de conceitos económicos.",
+                education2Title: "Informática de Gestão",
+                education2Description:
+                "Adquiri conhecimentos em gestão e tecnologia da informação, com foco em áreas como análise de sistemas, gestão estratégica e aplicações empresariais. Durante o curso, desenvolvi também competências em programação, utilizando linguagens como PHP e SQL para criar soluções práticas e inovadoras para problemas empresariais.",
+                education3Title: "Pós-Graduação em Cibersegurança",
+                education3Description:
+                "Especialização em cibersegurança, abordando tópicos como gestão de riscos, segurança de redes e proteção de dados, com ênfase em soluções práticas para desafios digitais.",
+                quality: "Qualidade",
+                educationExpericence: "Educação e Experiência",
+                experienceHeader: "Minha Experiência",
+                experience1Title: "Responsável pelo Bar",
+                experience1Company: "Restaurante Vitória | 2019",
+                experience1Description: 
+                    "Durante 3 meses, fui responsável pela operação e organização do bar no Restaurante Vitória, assegurando um atendimento de excelência e a gestão eficiente de pedidos.",
+                experience2Title: "Operador Fabril",
+                experience2Company: "Ourividro | 2021",
+                experience2Description: 
+                    "Trabalhei por 3 meses na Ourividro, realizando o acabamento de vidros, retirando excessos de tinta para garantir a qualidade antes do envio aos clientes.",
+                experience3Title: "Programador de Aplicação Mobile",
+                experience3Company: "EzConnector | 2022",
+                experience3Description: 
+                    "Desenvolvi uma aplicação mobile durante 3 meses para otimizar processos internos e ofereci suporte técnico aos clientes sempre que necessário.",
+                experience4Title: "Desenvolvedor Web",
+                experience4Company: "Trigenius | 2023 - Presente",
+                experience4Description: "Atualmente trabalho em projetos de desenvolvimento web utilizando PyroCMS e Prestashop, incluindo a criação de sites de e-commerce e desenvolvimento de módulos personalizados para Prestashop. Ocasionalmente, programo em C# para produtos internos da Trigenius.",
+                skillsHeaderMain: "Competências",
+                skillsHeaderSecondary: "As Minhas Competências"
+            },
+            en: {
+                btnEnglish: "English",
+                btnPortuguese: "Portuguese",
+                downloadCv:"Download CV",
+                navHome: "Home",
+                navAbout: "About",
+                navQuality: "Quality",
+                navSkill: "Skill",
+                navService: "Service",
+                navPortfolio: "Portfolio",
+                navReview: "Review",
+                navBlog: "Blog",
+                navContact: "Contact",
+                navHireMe: "Hire Me",
+                introText: "I'm",
+                aboutOnly: "About",
+                aboutHeader: "About Me",
+                aboutSubheader: "Full Stack Developer",
+                aboutDescription:
+                    "I hold a degree in Management Informatics, with experience in programming and an interest in cybersecurity. Since a young age, I have been passionate about technology and management, areas in which I continuously strive to expand my knowledge. I value teamwork and seek an environment where I can apply my skills, learn, and grow professionally.",
+                infName: "Name: ",
+                infBirthday: "Birthday: ",
+                infDegree: "Degree: ",
+                birthday: "July 5, 2002",
+                degree: "Bachelor's Degree",
+                infExperience:"Experience",
+                hireMe: "Hire Me",
+                learnMore: "Learn More",
+                educationHeader: "My Education",
+                education1Title: "Socio-Economic Sciences",
+                education1Description:
+                "During this period, I developed a strong foundation in social and economic sciences, exploring topics such as economics, sociology, and management, with an emphasis on the practical application of economic concepts.",
+                education2Title: "Management IT",
+                education2Description:
+                "I acquired knowledge in management and information technology, focusing on areas such as systems analysis, strategic management, and business applications. During the course, I also developed programming skills, using languages like PHP and SQL to create practical and innovative solutions for business problems.",
+                education3Title: "Postgraduate Cybersecurity",
+                education3Description:
+                "Specialization in cybersecurity, addressing topics such as risk management, network security, and data protection, with an emphasis on practical solutions for digital challenges.",
+                quality: "Quality",
+                educationExpericence: "Education & Expericence",
+                experienceHeader: "My Experience",
+                experience1Title: "Bar Manager",
+                experience1Company: "Restaurante Vitória | 2019",
+                experience1Description: 
+                    "Managed the bar operations for 3 months, ensuring excellent customer service and efficient order management at a restaurant in Fátima.",
+                experience2Title: "Factory Operator",
+                experience2Company: "Ourividro | 2021",
+                experience2Description: 
+                    "Worked for 3 months performing finishing tasks on glass products, removing excess paint to ensure quality before shipping to customers.",
+                experience3Title: "Mobile App Developer",
+                experience3Company: "EzConnector | 2022",
+                experience3Description: 
+                    "Developed a mobile application over 3 months to optimize internal processes and provided customer support when needed.",
+                experience4Title: "Web Developer",
+                experience4Company: "Trigenius | 2023 - Present",
+                experience4Description: "Currently working on web development projects using PyroCMS and Prestashop, including creating e-commerce sites and developing custom modules for Prestashop. Occasionally programming in C# for internal Trigenius products.",
+                skillsHeaderMain: "Skills",
+                skillsHeaderSecondary: "My Skills"
+            },
+        };
+
+      
+        function setLanguage(lang) {
+            const startYear = 2023;
+            const currentYear = new Date().getFullYear();
+            const experienceYears = currentYear - startYear;
+            const experienceText =
+                lang === "pt"
+                ? `${experienceYears} ${experienceYears === 1 ? "Ano" : "Anos"}`
+                : `${experienceYears} ${experienceYears === 1 ? "Year" : "Years"}`;
+
+            btnEnglish.textContent = translations[lang].btnEnglish;
+            btnPortuguese.textContent = translations[lang].btnPortuguese;
+            downloadCv.textContent = translations[lang].downloadCv;
+            navHome.textContent = translations[lang].navHome;
+            navAbout.textContent = translations[lang].navAbout;
+            navQuality.textContent = translations[lang].navQuality;
+            navSkill.textContent = translations[lang].navSkill;
+            // navService.textContent = translations[lang].navService;
+            // navPortfolio.textContent = translations[lang].navPortfolio;
+            // navReview.textContent = translations[lang].navReview;
+            // navBlog.textContent = translations[lang].navBlog;
+            // navContact.textContent = translations[lang].navContact;
+            navHireMe.textContent = translations[lang].navHireMe;
+
+            introText.textContent = translations[lang].introText;
+            aboutOnly.textContent = translations[lang].aboutOnly;
+            aboutHeader.textContent = translations[lang].aboutHeader;
+            aboutSubheader.textContent = translations[lang].aboutSubheader;
+            aboutDescription.textContent = translations[lang].aboutDescription;
+            infName.innerHTML = `${translations[lang].infName}<span class="text-secondary">Rafael Pereira Reis</span>`;
+            infBirthday.innerHTML = `${translations[lang].infBirthday}<span class="text-secondary">${translations[lang].birthday}</span>`;
+            infDegree.innerHTML = `${translations[lang].infDegree}<span class="text-secondary">${translations[lang].degree}</span>`;
+            birthdayField.textContent = translations[lang].birthday;
+            degreeField.textContent = translations[lang].degree;
+            infExperience.innerHTML = `${translations[lang].infExperience}: <span class="text-secondary">${experienceText}</span>`;
+            hireMeBtn.textContent = translations[lang].hireMe;
+            learnMoreBtn.textContent = translations[lang].learnMore;
+
+            quality.innerHTML = translations[lang].quality;
+            educationExpericence.innerHTML = translations[lang].educationExpericence;
+            educationHeader.textContent = translations[lang].educationHeader;
+            education1Title.textContent = translations[lang].education1Title;
+            education1Description.textContent = translations[lang].education1Description;
+            education2Title.textContent = translations[lang].education2Title;
+            education2Description.textContent = translations[lang].education2Description;
+            education3Title.textContent = translations[lang].education3Title;
+            education3Description.textContent = translations[lang].education3Description;
+
+            experienceHeader.textContent = translations[lang].experienceHeader;
+            experience1Title.textContent = translations[lang].experience1Title;
+            experience1Company.textContent = translations[lang].experience1Company;
+            experience1Description.textContent = translations[lang].experience1Description;
+            experience2Title.textContent = translations[lang].experience2Title;
+            experience2Company.textContent = translations[lang].experience2Company;
+            experience2Description.textContent = translations[lang].experience2Description;
+            experience3Title.textContent = translations[lang].experience3Title;
+            experience3Company.textContent = translations[lang].experience3Company;
+            experience3Description.textContent = translations[lang].experience3Description;
+            experience4Title.textContent = translations[lang].experience4Title;
+            experience4Company.textContent = translations[lang].experience4Company;
+            experience4Description.textContent = translations[lang].experience4Description;
+            skillsHeaderMain.textContent = translations[lang].skillsHeaderMain;
+            skillsHeaderSecondary.textContent = translations[lang].skillsHeaderSecondary;
+
+             
+            if (lang === 'pt') {
+                btnPortuguese.classList.add('selected');
+                btnEnglish.classList.remove('selected');
+                updateDownloadLink();
+            } else {
+                btnEnglish.classList.add('selected');
+                btnPortuguese.classList.remove('selected');
+                updateDownloadLink();
+            }
+        }
+
+        btnEnglish.addEventListener('click', () => setLanguage('en'));
+        btnPortuguese.addEventListener('click', () => setLanguage('pt'));
+        
+        const btnEn = document.getElementById('btn-en');
+        const btnPt = document.getElementById('btn-pt');
+
+
+        function updateDownloadLink() {
+            if (btnEn.classList.contains('selected')) {
+                downloadCv.href = 'Rafael_Reis_EN_CV.pdf';
+            } else if (btnPt.classList.contains('selected')) {
+                downloadCv.href = 'Rafael_Reis_PT_CV.pdf';
+            }
+        }
+
+        const startYear = 2023;
+        const currentYear = new Date().getFullYear();
+        const experienceYears = currentYear - startYear;
+        document.getElementById("experience").textContent = `${experienceYears} ${experienceYears === 1 ? "Year" : "Years"}`;
+    </script>
+</body>
+
+</html>
